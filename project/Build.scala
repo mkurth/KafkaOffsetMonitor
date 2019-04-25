@@ -14,6 +14,7 @@ object KafkaUtilsBuild extends Build {
     retrieveManaged := true,
     transitiveClassifiers in Scope.GlobalScope := Seq("sources"),
     resolvers ++= Seq(
+      "twitter repo" at "http://maven.twttr.com",    
       "sonatype-snapshots" at "http://oss.sonatype.org/content/repositories/snapshots",
       "sonatype-releases" at "http://oss.sonatype.org/content/repositories/releases",
       "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
@@ -45,7 +46,7 @@ object KafkaUtilsBuild extends Build {
       "com.quantifind" %% "sumac" % "0.3.0",
       "com.typesafe.slick" %% "slick" % "2.0.0",
       "org.xerial" % "sqlite-jdbc" % "3.7.2",
-      "com.twitter" % "util-core" % "3.0.0",
+      "com.twitter" % "util-core" % "3.0.1",
       "org.reflections" % "reflections" % "0.9.10"),
     resolvers ++= Seq(
       "java m2" at "http://download.java.net/maven/2",
